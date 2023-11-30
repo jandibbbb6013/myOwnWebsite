@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Nocturnal Devs</title>
+    <script src="https://kit.fontawesome.com/feb118aecb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Ribbon Start--->
+    <div id="header2">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><img src="G:\Jandib\myWebsite\assets\companyLogo.png"></h2>
+                <ul>
+                    <li><a href="G:\Jandib\myWebsite\Index.html" target="_blank">Home</a></li>
+                    <li><a href="G:\Jandib\myWebsite\About.html" target="_blank">About</a></li>   <!-- CHANGE THE HREF'S add target-->
+                    <li><a href="G:\Jandib\myWebsite\Services.html" target="_blank">Services</a></li>
+                    <li><a href="G:\Jandib\myWebsite\Our-Works.html" target="_blank">Our Works</a></li>
+                    <li><a href="G:\Jandib\myWebsite\Contact-Us.html" target="_blank">Contact Us</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>  
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!---Services section start---> <!---Need to be edit--->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As web developers, we are ensuring that the websites I create are user-friendly, visually appealing, and meet the specific requirements of my clients or users.</p>
+                    <a href="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\Contact-Us.html" target="_blank">Let's Talk</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>As UI designers, our job is to create beautiful, functional, and user-friendly interfaces that make the product a pleasure to use.</p>
+                    <a href="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\Contact-Us.html" target="_blank">Let's Talk</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-box"></i>
+                    <h2>Custom Package</h2>
+                    <p>As UI Designers and Web Developers, We are ensuring that the UI Design is being created beautifully and the Websites we create are user-friendly, visually appealing, and meet the specific requirements of our clients or users.</p>
+                    <a href="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\Contact-Us.html" target="_blank">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>

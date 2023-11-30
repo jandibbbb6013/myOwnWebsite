@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Nocturnal Devs</title>
+    <script src="https://kit.fontawesome.com/feb118aecb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Ribbon Start--->
+    <div id="header2">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><img src="G:\Jandib\myWebsite\assets\companyLogo.png"></h2>
+                <ul>
+                    <li><a href="G:\Jandib\myWebsite\Index.html" target="_blank">Home</a></li>
+                    <li><a href="G:\Jandib\myWebsite\About.html" target="_blank">About</a></li>   <!-- CHANGE THE HREF'S add target-->
+                    <li><a href="G:\Jandib\myWebsite\Services.html" target="_blank">Services</a></li>
+                    <li><a href="G:\Jandib\myWebsite\Our-Works.html" target="_blank">Our Works</a></li>
+                    <li><a href="G:\Jandib\myWebsite\Contact-Us.html" target="_blank">Contact Us</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>  
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    
+            <!---Portfolio--- skipped on progress--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Our Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\assets\work-1.png">
+                    <div class="layer">
+                        <h3>Example Project 1</h3>
+                        <p>This is one of our projects that we have made.</p>
+                        <a href="https://github.com/jandibbbb6013" target="_blank">Live Demo</a>
+                        <a href="https://github.com/jandibbbb6013" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                <!---unknown-need-edit--->
+                <div class="work">
+                    <img src="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\assets\work-2.png">
+                    <div class="layer">
+                        <h3>Example Project 2</h3>
+                        <p>This is one of our projects that we have made.</p>
+                        <a href="https://github.com/jandibbbb6013" target="_blank">Live Demo</a>
+                        <a href="https://github.com/jandibbbb6013" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                <!---unknown-need-edit--->
+                <div class="work">
+                    <img src="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\assets\work-3.png">
+                    <div class="layer">
+                        <h3>Example Project 3</h3>
+                        <p>This is one of our projects that we have made.</p>
+                        <a href="https://github.com/jandibbbb6013" target="_blank">Live Demo</a>
+                        <a href="https://github.com/jandibbbb6013" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/jandibbbb6013" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Nocturnal Devs</title>
+    <script src="https://kit.fontawesome.com/feb118aecb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Ribbon Start--->
+    <div id="header2">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><img src="G:\Jandib\myWebsite\assets\companyLogo.png"></h2>
+                <ul>
+                    <li><a href="G:\Jandib\myWebsite\Index.html" target="_blank">Home</a></li>
+                    <li><a href="G:\Jandib\myWebsite\About.html" target="_blank">About</a></li>   <!-- CHANGE THE HREF'S add target-->
+                    <li><a href="G:\Jandib\myWebsite\Services.html" target="_blank">Services</a></li>
+                    <li><a href="G:\Jandib\myWebsite\Our-Works.html" target="_blank">Our Works</a></li>
+                    <li><a href="G:\Jandib\myWebsite\Contact-Us.html" target="_blank">Contact Us</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>  
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    <!---About section Start--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\dexte\OneDrive\Desktop\Jandib\myWebsite\assets\user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p class="sub-title1"><br>We are Full-stack Developers. We can provide clean code and pixel perfect <br><br>design.<br> <br>We also make the website more & more interactive with web animation. <br> <br>A responsive design makes your website accessible to all users, regardless of <br> <br>their device.<br></p>
+                    <!---Work section--->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('work')">Work</p>
+                        <p class="tab-links" onclick="opentab('agency')">Agency</p>
+                        <p class="tab-links" onclick="opentab('carrers')">Careers</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="work">
+                        <ul>
+                            <li><span>UI Design</span><br><br>Web Designing</li>
+                            <li><span><br>Web Development</span><br><br>Web template design</li>
+                        </ul>
+                    </div>
+                    <!---Agency section--->
+                    <div class="tab-contents" id="agency">
+                        <ul>
+                            <!---change-into-something--->
+                            <li><span>2022 - Current</span><br><br>We are an independent agency with a deep <br><br>skill set, big ideas, lots of heart and a global reputation.</li>
+                        </ul>
+                    </div>
+                    <!---Carrers section--->
+                    <div class="tab-contents" id="carrers">
+                        <ul>
+                            <!---change-into-something--->
+                            <li><span>2022 - Current</span><br><br>We believe in the potential of every individual, no matter their background.<br><br>We’re on the lookout for driven professionals eager <br><br>to take their careers to the next level.</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
